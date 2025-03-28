@@ -1,4 +1,4 @@
-# docker_sample
+# docker_js_sample
 
 This repository is for learing porposes.<br/>
 It's a minimal out of the box docker sample.<br/>
@@ -9,8 +9,8 @@ package.json: contains dependencies needed to run the serverside application<br/
 app.js: serverside application (simple express server)<br/>
 
 
-Create a image named "docker_sample" from the Dockerfile:<br/>
-	docker build -t docker_sample . <br/>
+Create a image named "docker_js_sample" from the Dockerfile:<br/>
+	docker build -t docker_js_sample . <br/>
 
 Description:<br/>
 docker build = default command to build a image<br/>
@@ -19,7 +19,7 @@ docker build = default command to build a image<br/>
 
 
 Run a docker-container based on the previously built image:<br/>
-	docker run -p 3000:3000 -d docker_sample <br/>
+	docker run -p 3000:3000 -d docker_js_sample <br/>
 
 Description:<br/>
 docker run = default command to run a container<br/>
