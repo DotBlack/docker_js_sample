@@ -1,31 +1,31 @@
 # docker_sample
 
-This repository is for learing porposes.
-It's a minimal out of the box docker sample.
+This repository is for learing porposes.<br/>
+It's a minimal out of the box docker sample.<br/>
 
-Files: 
-Dockerfile: describes docker instructions
-package.json: contains dependencies needed to run the serverside application
-app.js: serverside application (simple express server)
-
-
-Create a image named "docker_sample" from the Dockerfile:
-	docker build -t docker_sample .
-
-Description:
-docker build = default command to build a image
--t = tag = name for the image
-. = take everything in the build directory (current filepath)
+Files:<br/>
+Dockerfile: describes docker instructions<br/>
+package.json: contains dependencies needed to run the serverside application<br/>
+app.js: serverside application (simple express server)<br/>
 
 
-Run a docker-container based on the previously built image:
-	docker run -p 3000:3000 -d docker_sample
+Create a image named "docker_sample" from the Dockerfile:<br/>
+	docker build -t docker_sample . <br/>
 
-Description:
-docker run = default command to run a container
--p = port = binds port 3000 of the container (left side) to the port 3000 of the host (right side)
--d = detached mode = does not block console interaction (background task)
+Description:<br/>
+docker build = default command to build a image<br/>
+-t = tag = name for the image<br/>
+. = take everything in the build directory (current filepath)<br/>
 
 
-Visit the application:
-	http://localhost:3000
+Run a docker-container based on the previously built image:<br/>
+	docker run -p 3000:3000 -d docker_sample <br/>
+
+Description:<br/>
+docker run = default command to run a container<br/>
+-p = port = binds port 3000 of the container (left side) to the port 3000 of the host (right side)<br/>
+-d = detached mode = does not block console interaction (background task)<br/>
+
+
+Visit the application:<br/>
+	http://localhost:3000 <br/>
